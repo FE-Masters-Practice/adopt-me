@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt Me!</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -13,6 +14,14 @@
     <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
     <script>
         // my code is going to go here 
+        const App = () => {
+            return React.createElement(
+                "div", {},
+                React.createElement("h1", {},
+                    "Adopt Me!")
+            );
+        };
+        ReactDOM.render(React.createElement(App), document.getElementById('root'));
     </script>
 </body>
 
